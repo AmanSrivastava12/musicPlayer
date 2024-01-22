@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="logo"><img src="images/logo.png" alt="MUSIC" /></li>
+        <li class="navhead"><a href="index.html">HOME</a></li>
+        <li class="navhead"><a href="about.html">ABOUT</a></li>
+      </ul>
+    </nav>
+    <div class="back">
+      <h3>List of Songs</h3>
+      <section>
+        <div class="list">
+          <div class="item">
+            <span class="name">Apna Bana Le (From "Bhediya")</span>
+            <span class="play"
+              ><i id="1" class="fa-solid songplay fa-play"></i
+            ></span>
+          </div>
+          <div class="item">
+            <span class="name">Aap Jaisa Koi (From "An Action Hero")</span>
+            <span class="play"
+              ><i id="2" class="fa-solid songplay fa-play"></i
+            ></span>
+          </div>
+          <div class="item">
+            <span class="name">Firecracker (From "Jayeshbhai Jordaar")</span>
+            <span class="play"
+              ><i id="3" class="fa-solid songplay fa-play"></i
+            ></span>
+          </div>
+          <div class="item">
+            <span class="name"
+              >Yeh Ek Zindagi (From "Monica, O my Darling")</span
+            >
+            <span class="play"
+              ><i id="4" class="fa-solid songplay fa-play"></i
+            ></span>
+          </div>
+          <div class="item">
+            <span class="name">Kaala Jaadu (From "Freddy")</span>
+            <span class="play"
+              ><i id="5" class="fa-solid songplay fa-play"></i
+            ></span>
+          </div>
+          <div class="item">
+            <span class="name">Kesariya (From "Brahmastra")</span>
+            <span class="play"
+              ><i id="6" class="fa-solid songplay fa-play"></i
+            ></span>
+          </div>
+          <div class="item">
+            <span class="name">Maiyya Mainu (From "Jersey")</span>
+            <span class="play"
+              ><i id="7" class="fa-solid songplay fa-play"></i
+            ></span>
+          </div>
+          <div class="item">
+            <span class="name"
+              >Tere Pyaar Mein (From "Tu Jhoothi Main Makkaar")</span
+            >
+            <span class="play"
+              ><i id="8" class="fa-solid songplay fa-play"></i
+            ></span>
+          </div>
+          <div class="item">
+            <span class="name">Rait Zara Si (From "Atrangi Re")</span>
+            <span class="play"
+              ><i id="9" class="fa-solid songplay fa-play"></i
+            ></span>
+          </div>
+          <div class="item">
+            <span class="name">Tu Jo Mila (From "Bajrangi Bhaijaan")</span>
+            <span class="play"
+              ><i id="10" class="fa-solid songplay fa-play"></i
+            ></span>
+          </div>
+        </div>
+        <div class="imgplaypause">
+          <img id="playimage" src="images/pauseimage.jpg" alt="" />
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="playcontainer">
+        <div id="currentsong">Apna Bana Le (From "Bhediya")</div>
+        <div class="icons">
+          <i class="fas fa-2x fa-step-backward" id="prev"></i>
+          <i class="fa-solid fa-2x fa-play" id="playsong"></i>
+          <i class="fas fa-2x fa-step-forward" id="next"></i>
+        </div>
+        <div id="audioplaybacktime">0:00 / 4:33</div>
+      </div>
+      <input type="range" name="range" id="bar" min="0" value="0" max="100" />
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/c733fc0f10.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
